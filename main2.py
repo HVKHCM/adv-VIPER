@@ -21,13 +21,13 @@ from log import *
 import tensorflow as tf
 import utils
 
-def learn_dt():
+def learn_dt(agent):
     # Parameters
     log_fname = '../taxi_dt.log'
     max_depth = 10
     n_batch_rollouts = 100
-    max_samples = 400
-    max_iters = 10
+    max_samples = 10000
+    max_iters = 5
     train_frac = 0.8
     is_reweight = True
     n_test_rollouts = 50
@@ -43,7 +43,7 @@ def learn_dt():
     #env = get_pong_env()
     env = gym.make("Taxi-v3").env
     #teacher = DQNPolicy(env, model_path)
-    teacher = train()
+    teacher = agent
     state_transformer = utils.state_transformer
     student = DTPolicy(max_depth, state_transformer)
 
@@ -68,6 +68,7 @@ def learn_dt():
     #Get branches
     all_branches = list(student.branches_retrieve())
     print(all_branches)
+    return student
 
 def bin_acts():
     # Parameters
@@ -101,7 +102,15 @@ def print_size():
     print(dt.tree.tree_.node_count)
 
 if __name__ == '__main__':
-    learn_dt()
+    env = gym.make("Taxi-v3").env
+    agent = train()
+    #student1 = learn_dt(agent)
+    #student2 = learn_dt(agent)
+    #sim1, sim2 = test_similar(student1, student2, env, agent)
+    #print(sim1*100)
+    #print(sim2*100)
+    student = learn_dt(agent)
+    get_depth(student, [[0,10,10,10]])
 
     #viz = load_grahviz("tmp/pong", "dt_policy1.dot")
     #print(viz)

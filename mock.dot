@@ -1,0 +1,748 @@
+digraph Tree {
+	graph [bb="0,0,5966,1208"];
+	node [color=black,
+		fontname=helvetica,
+		label="\N",
+		shape=box,
+		style="filled, rounded"
+	];
+	edge [fontname=helvetica];
+	0	[fillcolor=green,
+		height=1.0833,
+		label=<x<SUB>2</SUB> &le; 0.5<br/>gini = 0.757<br/>samples = 1<br/>value = [9, 27, 65, 15, 21, 23]<br/>class = 2>,
+		pos="3039.5,1169",
+		width=3.1944];
+	1	[fillcolor=white,
+		height=1.0833,
+		label=<x<SUB>0</SUB> &le; 1.5<br/>gini = 0.789<br/>samples = 0<br/>value = [4, 16, 5, 7, 6, 8]<br/>class = 1>,
+		pos="1969.5,1055",
+		width=2.6944];
+	0 -> 1	[head_lp="2082.4,1085.6",
+		headlabel=True,
+		labelangle=45,
+		labeldistance=2.5,
+		pos="e,2066.7,1066.2 2924.5,1156 2716.1,1134.2 2279.2,1088.4 2076.7,1067.2"];
+	48	[fillcolor=green,
+		height=1.0833,
+		label=<x<SUB>1</SUB> &le; 2.5<br/>gini = 0.672<br/>samples = 1<br/>value = [5, 11, 60, 8, 15, 15]<br/>class = 2>,
+		pos="3418.5,1055",
+		width=3.0694];
+	0 -> 48	[head_lp="3295.9,1109.6",
+		headlabel=False,
+		labelangle=-45,
+		labeldistance=2.5,
+		pos="e,3307.9,1087.7 3154.7,1132.6 3157.6,1131.8 3160.6,1130.9 3163.5,1130 3207.4,1116.9 3255.5,1102.9 3298.1,1090.5"];
+	2	[fillcolor=white,
+		height=1.0833,
+		label=<x<SUB>1</SUB> &le; 1.0<br/>gini = 0.632<br/>samples = 0<br/>value = [0, 9, 0, 6, 0, 4]<br/>class = 1>,
+		pos="600.5,941",
+		width=2.5694];
+	1 -> 2	[pos="e,693.34,949.59 1872.4,1046.1 1622.6,1025.6 959.43,971.36 703.38,950.42"];
+	19	[fillcolor=white,
+		height=1.0833,
+		label=<x<SUB>3</SUB> &le; 2.5<br/>gini = 0.804<br/>samples = 0<br/>value = [4, 7, 5, 1, 6, 4]<br/>class = 1>,
+		pos="1969.5,941",
+		width=2.5694];
+	1 -> 19	[pos="e,1969.5,980.06 1969.5,1015.8 1969.5,1007.6 1969.5,998.8 1969.5,990.28"];
+	3	[fillcolor=white,
+		height=1.0833,
+		label=<x<SUB>0</SUB> &le; 0.5<br/>gini = 0.444<br/>samples = 0<br/>value = [0, 2, 0, 0, 0, 4]<br/>class = 5>,
+		pos="295.5,827",
+		width=2.5694];
+	2 -> 3	[pos="e,388.07,861.99 507.75,905.94 472.92,893.15 433.15,878.55 397.52,865.46"];
+	6	[fillcolor=white,
+		height=1.0833,
+		label=<x<SUB>3</SUB> &le; 2.5<br/>gini = 0.497<br/>samples = 0<br/>value = [0, 7, 0, 6, 0, 0]<br/>class = 1>,
+		pos="600.5,827",
+		width=2.5694];
+	2 -> 6	[pos="e,600.5,866.06 600.5,901.77 600.5,893.57 600.5,884.8 600.5,876.28"];
+	4	[fillcolor=white,
+		height=0.94444,
+		label=<gini = 0.0<br/>samples = 0<br/>value = [0, 2, 0, 0, 0, 0]<br/>class = 1>,
+		pos="92.5,713",
+		width=2.5694];
+	3 -> 4	[pos="e,152.5,747.1 226.49,787.93 205.47,776.33 182.37,763.58 161.36,751.99"];
+	5	[fillcolor=white,
+		height=0.94444,
+		label=<gini = 0.0<br/>samples = 0<br/>value = [0, 0, 0, 0, 0, 4]<br/>class = 5>,
+		pos="295.5,713",
+		width=2.5694];
+	3 -> 5	[pos="e,295.5,747.2 295.5,787.77 295.5,777.99 295.5,767.4 295.5,757.38"];
+	7	[fillcolor=white,
+		height=1.0833,
+		label=<x<SUB>0</SUB> &le; 0.5<br/>gini = 0.469<br/>samples = 0<br/>value = [0, 3, 0, 5, 0, 0]<br/>class = 3>,
+		pos="498.5,713",
+		width=2.5694];
+	6 -> 7	[pos="e,533.16,752.06 565.68,787.77 557.39,778.67 548.47,768.87 539.92,759.48"];
+	16	[fillcolor=white,
+		height=1.0833,
+		label=<x<SUB>0</SUB> &le; 0.5<br/>gini = 0.32<br/>samples = 0<br/>value = [0, 4, 0, 1, 0, 0]<br/>class = 1>,
+		pos="701.5,713",
+		width=2.5694];
+	6 -> 16	[pos="e,667.18,752.06 634.98,787.77 643.1,778.76 651.84,769.06 660.24,759.76"];
+	8	[fillcolor=white,
+		height=0.94444,
+		label=<gini = 0.0<br/>samples = 0<br/>value = [0, 0, 0, 2, 0, 0]<br/>class = 3>,
+		pos="295.5,599",
+		width=2.5694];
+	7 -> 8	[pos="e,355.5,633.1 429.49,673.93 408.47,662.33 385.37,649.58 364.36,637.99"];
+	9	[fillcolor=white,
+		height=1.0833,
+		label=<x<SUB>1</SUB> &le; 2.5<br/>gini = 0.5<br/>samples = 0<br/>value = [0, 3, 0, 3, 0, 0]<br/>class = 1>,
+		pos="498.5,599",
+		width=2.5694];
+	7 -> 9	[pos="e,498.5,638.06 498.5,673.77 498.5,665.57 498.5,656.8 498.5,648.28"];
+	10	[fillcolor=white,
+		height=0.94444,
+		label=<gini = 0.0<br/>samples = 0<br/>value = [0, 0, 0, 1, 0, 0]<br/>class = 3>,
+		pos="396.5,485",
+		width=2.5694];
+	9 -> 10	[pos="e,426.73,519.2 463.68,559.77 454.02,549.16 443.5,537.61 433.71,526.86"];
+	11	[fillcolor=white,
+		height=1.0833,
+		label=<x<SUB>3</SUB> &le; 1.5<br/>gini = 0.48<br/>samples = 0<br/>value = [0, 3, 0, 2, 0, 0]<br/>class = 1>,
+		pos="599.5,485",
+		width=2.5694];
+	9 -> 11	[pos="e,565.18,524.06 532.98,559.77 541.1,550.76 549.84,541.06 558.24,531.76"];
+	12	[fillcolor=white,
+		height=0.94444,
+		label=<gini = 0.0<br/>samples = 0<br/>value = [0, 2, 0, 0, 0, 0]<br/>class = 1>,
+		pos="498.5,371",
+		width=2.5694];
+	11 -> 12	[pos="e,528.44,405.2 565.02,445.77 555.46,435.16 545.04,423.61 535.34,412.86"];
+	13	[fillcolor=white,
+		height=1.0833,
+		label=<x<SUB>1</SUB> &le; 3.5<br/>gini = 0.444<br/>samples = 0<br/>value = [0, 1, 0, 2, 0, 0]<br/>class = 3>,
+		pos="701.5,371",
+		width=2.5694];
+	11 -> 13	[pos="e,666.84,410.06 634.32,445.77 642.61,436.67 651.53,426.87 660.08,417.48"];
+	14	[fillcolor=white,
+		height=0.94444,
+		label=<gini = 0.0<br/>samples = 0<br/>value = [0, 0, 0, 2, 0, 0]<br/>class = 3>,
+		pos="600.5,257",
+		width=2.5694];
+	13 -> 14	[pos="e,630.44,291.2 667.02,331.77 657.46,321.16 647.04,309.61 637.34,298.86"];
+	15	[fillcolor=white,
+		height=0.94444,
+		label=<gini = 0.0<br/>samples = 0<br/>value = [0, 1, 0, 0, 0, 0]<br/>class = 1>,
+		pos="803.5,257",
+		width=2.5694];
+	13 -> 15	[pos="e,773.27,291.2 736.32,331.77 745.98,321.16 756.5,309.61 766.29,298.86"];
+	17	[fillcolor=white,
+		height=0.94444,
+		label=<gini = 0.0<br/>samples = 0<br/>value = [0, 4, 0, 0, 0, 0]<br/>class = 1>,
+		pos="701.5,599",
+		width=2.5694];
+	16 -> 17	[pos="e,701.5,633.2 701.5,673.77 701.5,663.99 701.5,653.4 701.5,643.38"];
+	18	[fillcolor=white,
+		height=0.94444,
+		label=<gini = 0.0<br/>samples = 0<br/>value = [0, 0, 0, 1, 0, 0]<br/>class = 3>,
+		pos="904.5,599",
+		width=2.5694];
+	16 -> 18	[pos="e,844.5,633.1 770.51,673.93 791.53,662.33 814.63,649.58 835.64,637.99"];
+	20	[fillcolor=white,
+		height=1.0833,
+		label=<x<SUB>3</SUB> &le; 1.5<br/>gini = 0.785<br/>samples = 0<br/>value = [3, 7, 4, 1, 2, 4]<br/>class = 1>,
+		pos="1766.5,827",
+		width=2.5694];
+	19 -> 20	[pos="e,1835.7,866.16 1900.5,901.93 1882.5,892.01 1863,881.25 1844.6,871.09"];
+	43	[fillcolor=white,
+		height=1.0833,
+		label=<x<SUB>1</SUB> &le; 3.5<br/>gini = 0.5<br/>samples = 0<br/>value = [1, 0, 1, 0, 4, 0]<br/>class = 4>,
+		pos="2071.5,827",
+		width=2.5694];
+	19 -> 43	[pos="e,2036.8,866.06 2004.3,901.77 2012.6,892.67 2021.5,882.87 2030.1,873.48"];
+	21	[fillcolor=white,
+		height=1.0833,
+		label=<x<SUB>1</SUB> &le; 0.5<br/>gini = 0.691<br/>samples = 0<br/>value = [0, 2, 4, 0, 2, 1]<br/>class = 2>,
+		pos="1411.5,713",
+		width=2.5694];
+	20 -> 21	[pos="e,1504.1,743.21 1673.7,796.72 1624.6,781.22 1564.2,762.16 1513.7,746.24"];
+	32	[fillcolor=white,
+		height=1.0833,
+		label=<x<SUB>1</SUB> &le; 3.5<br/>gini = 0.694<br/>samples = 0<br/>value = [3, 5, 0, 1, 0, 3]<br/>class = 1>,
+		pos="1766.5,713",
+		width=2.5694];
+	20 -> 32	[pos="e,1766.5,752.06 1766.5,787.77 1766.5,779.57 1766.5,770.8 1766.5,762.28"];
+	22	[fillcolor=white,
+		height=1.0833,
+		label=<x<SUB>0</SUB> &le; 3.0<br/>gini = 0.444<br/>samples = 0<br/>value = [0, 0, 2, 0, 0, 1]<br/>class = 2>,
+		pos="1107.5,599",
+		width=2.5694];
+	21 -> 22	[pos="e,1200.1,634.1 1318.6,677.79 1284.2,665.12 1245.1,650.68 1209.9,637.71"];
+	25	[fillcolor=white,
+		height=1.0833,
+		label=<x<SUB>0</SUB> &le; 3.0<br/>gini = 0.667<br/>samples = 0<br/>value = [0, 2, 2, 0, 2, 0]<br/>class = 1>,
+		pos="1411.5,599",
+		width=2.5694];
+	21 -> 25	[pos="e,1411.5,638.06 1411.5,673.77 1411.5,665.57 1411.5,656.8 1411.5,648.28"];
+	23	[fillcolor=white,
+		height=0.94444,
+		label=<gini = 0.0<br/>samples = 0<br/>value = [0, 0, 2, 0, 0, 0]<br/>class = 2>,
+		pos="878.5,485",
+		width=2.5694];
+	22 -> 23	[pos="e,946.18,519.1 1029.7,559.93 1005.6,548.17 979.18,535.24 955.23,523.53"];
+	24	[fillcolor=white,
+		height=0.94444,
+		label=<gini = 0.0<br/>samples = 0<br/>value = [0, 0, 0, 0, 0, 1]<br/>class = 5>,
+		pos="1081.5,485",
+		width=2.5694];
+	22 -> 24	[pos="e,1089.2,519.2 1098.6,559.77 1096.3,549.88 1093.8,539.17 1091.5,529.06"];
+	26	[fillcolor=white,
+		height=1.0833,
+		label=<x<SUB>1</SUB> &le; 3.0<br/>gini = 0.444<br/>samples = 0<br/>value = [0, 2, 0, 0, 1, 0]<br/>class = 1>,
+		pos="1284.5,485",
+		width=2.5694];
+	25 -> 26	[pos="e,1327.7,524.06 1368.1,559.77 1357.6,550.49 1346.3,540.48 1335.4,530.92"];
+	29	[fillcolor=white,
+		height=1.0833,
+		label=<x<SUB>1</SUB> &le; 2.5<br/>gini = 0.444<br/>samples = 0<br/>value = [0, 0, 2, 0, 1, 0]<br/>class = 2>,
+		pos="1487.5,485",
+		width=2.5694];
+	25 -> 29	[pos="e,1461.7,524.06 1437.4,559.77 1443.4,551.03 1449.7,541.64 1455.9,532.6"];
+	27	[fillcolor=white,
+		height=0.94444,
+		label=<gini = 0.0<br/>samples = 0<br/>value = [0, 2, 0, 0, 0, 0]<br/>class = 1>,
+		pos="1081.5,371",
+		width=2.5694];
+	26 -> 27	[pos="e,1141.5,405.1 1215.5,445.93 1194.5,434.33 1171.4,421.58 1150.4,409.99"];
+	28	[fillcolor=white,
+		height=0.94444,
+		label=<gini = 0.0<br/>samples = 0<br/>value = [0, 0, 0, 0, 1, 0]<br/>class = 4>,
+		pos="1284.5,371",
+		width=2.5694];
+	26 -> 28	[pos="e,1284.5,405.2 1284.5,445.77 1284.5,435.99 1284.5,425.4 1284.5,415.38"];
+	30	[fillcolor=white,
+		height=0.94444,
+		label=<gini = 0.0<br/>samples = 0<br/>value = [0, 0, 0, 0, 1, 0]<br/>class = 4>,
+		pos="1487.5,371",
+		width=2.5694];
+	29 -> 30	[pos="e,1487.5,405.2 1487.5,445.77 1487.5,435.99 1487.5,425.4 1487.5,415.38"];
+	31	[fillcolor=white,
+		height=0.94444,
+		label=<gini = 0.0<br/>samples = 0<br/>value = [0, 0, 2, 0, 0, 0]<br/>class = 2>,
+		pos="1690.5,371",
+		width=2.5694];
+	29 -> 31	[pos="e,1630.5,405.1 1556.5,445.93 1577.5,434.33 1600.6,421.58 1621.6,409.99"];
+	33	[fillcolor=white,
+		height=1.0833,
+		label=<x<SUB>0</SUB> &le; 3.5<br/>gini = 0.688<br/>samples = 0<br/>value = [3, 1, 0, 1, 0, 3]<br/>class = 0>,
+		pos="1665.5,599",
+		width=2.5694];
+	32 -> 33	[pos="e,1699.8,638.06 1732,673.77 1723.9,664.76 1715.2,655.06 1706.8,645.76"];
+	42	[fillcolor=white,
+		height=0.94444,
+		label=<gini = 0.0<br/>samples = 0<br/>value = [0, 4, 0, 0, 0, 0]<br/>class = 1>,
+		pos="1868.5,599",
+		width=2.5694];
+	32 -> 42	[pos="e,1838.3,633.2 1801.3,673.77 1811,663.16 1821.5,651.61 1831.3,640.86"];
+	34	[fillcolor=white,
+		height=0.94444,
+		label=<gini = 0.0<br/>samples = 0<br/>value = [0, 0, 0, 0, 0, 3]<br/>class = 5>,
+		pos="1690.5,485",
+		width=2.5694];
+	33 -> 34	[pos="e,1683.1,519.2 1674,559.77 1676.2,549.88 1678.6,539.17 1680.9,529.06"];
+	35	[fillcolor=white,
+		height=1.0833,
+		label=<x<SUB>1</SUB> &le; 0.5<br/>gini = 0.56<br/>samples = 0<br/>value = [3, 1, 0, 1, 0, 0]<br/>class = 0>,
+		pos="1893.5,485",
+		width=2.5694];
+	33 -> 35	[pos="e,1815.8,524.16 1743,559.93 1763.5,549.87 1785.7,538.96 1806.6,528.68"];
+	36	[fillcolor=white,
+		height=0.94444,
+		label=<gini = 0.0<br/>samples = 0<br/>value = [0, 1, 0, 0, 0, 0]<br/>class = 1>,
+		pos="1893.5,371",
+		width=2.5694];
+	35 -> 36	[pos="e,1893.5,405.2 1893.5,445.77 1893.5,435.99 1893.5,425.4 1893.5,415.38"];
+	37	[fillcolor=white,
+		height=1.0833,
+		label=<x<SUB>1</SUB> &le; 1.5<br/>gini = 0.375<br/>samples = 0<br/>value = [3, 0, 0, 1, 0, 0]<br/>class = 0>,
+		pos="2096.5,371",
+		width=2.5694];
+	35 -> 37	[pos="e,2027.3,410.16 1962.5,445.93 1980.5,436.01 2000,425.25 2018.4,415.09"];
+	38	[fillcolor=white,
+		height=0.94444,
+		label=<gini = 0.0<br/>samples = 0<br/>value = [2, 0, 0, 0, 0, 0]<br/>class = 0>,
+		pos="1905.5,257",
+		width=2.5694];
+	37 -> 38	[pos="e,1962,291.1 2031.6,331.93 2012,320.43 1990.4,307.81 1970.8,296.3"];
+	39	[fillcolor=white,
+		height=1.0833,
+		label=<x<SUB>1</SUB> &le; 2.5<br/>gini = 0.5<br/>samples = 0<br/>value = [1, 0, 0, 1, 0, 0]<br/>class = 0>,
+		pos="2108.5,257",
+		width=2.5694];
+	37 -> 39	[pos="e,2104.4,296.06 2100.6,331.77 2101.5,323.57 2102.4,314.8 2103.3,306.28"];
+	40	[fillcolor=white,
+		height=0.94444,
+		label=<gini = 0.0<br/>samples = 0<br/>value = [0, 0, 0, 1, 0, 0]<br/>class = 3>,
+		pos="2007.5,143",
+		width=2.5694];
+	39 -> 40	[pos="e,2037.4,177.2 2074,217.77 2064.5,207.16 2054,195.61 2044.3,184.86"];
+	41	[fillcolor=white,
+		height=0.94444,
+		label=<gini = 0.0<br/>samples = 0<br/>value = [1, 0, 0, 0, 0, 0]<br/>class = 0>,
+		pos="2210.5,143",
+		width=2.5694];
+	39 -> 41	[pos="e,2180.3,177.2 2143.3,217.77 2153,207.16 2163.5,195.61 2173.3,184.86"];
+	44	[fillcolor=white,
+		height=1.0833,
+		label=<x<SUB>1</SUB> &le; 1.5<br/>gini = 0.5<br/>samples = 0<br/>value = [1, 0, 1, 0, 0, 0]<br/>class = 0>,
+		pos="2071.5,713",
+		width=2.5694];
+	43 -> 44	[pos="e,2071.5,752.06 2071.5,787.77 2071.5,779.57 2071.5,770.8 2071.5,762.28"];
+	47	[fillcolor=white,
+		height=0.94444,
+		label=<gini = 0.0<br/>samples = 0<br/>value = [0, 0, 0, 0, 4, 0]<br/>class = 4>,
+		pos="2274.5,713",
+		width=2.5694];
+	43 -> 47	[pos="e,2214.5,747.1 2140.5,787.93 2161.5,776.33 2184.6,763.58 2205.6,751.99"];
+	45	[fillcolor=white,
+		height=0.94444,
+		label=<gini = 0.0<br/>samples = 0<br/>value = [0, 0, 1, 0, 0, 0]<br/>class = 2>,
+		pos="2071.5,599",
+		width=2.5694];
+	44 -> 45	[pos="e,2071.5,633.2 2071.5,673.77 2071.5,663.99 2071.5,653.4 2071.5,643.38"];
+	46	[fillcolor=white,
+		height=0.94444,
+		label=<gini = 0.0<br/>samples = 0<br/>value = [1, 0, 0, 0, 0, 0]<br/>class = 0>,
+		pos="2274.5,599",
+		width=2.5694];
+	44 -> 46	[pos="e,2214.5,633.1 2140.5,673.93 2161.5,662.33 2184.6,649.58 2205.6,637.99"];
+	49	[fillcolor=white,
+		height=1.0833,
+		label=<x<SUB>3</SUB> &le; 0.5<br/>gini = 0.738<br/>samples = 0<br/>value = [3, 6, 32, 7, 15, 13]<br/>class = 2>,
+		pos="3418.5,941",
+		width=2.9444];
+	48 -> 49	[pos="e,3418.5,980.06 3418.5,1015.8 3418.5,1007.6 3418.5,998.8 3418.5,990.28"];
+	102	[fillcolor=green,
+		height=1.0833,
+		label=<x<SUB>3</SUB> &le; 2.5<br/>gini = 0.434<br/>samples = 1<br/>value = [2, 5, 28, 1, 0, 2]<br/>class = 2>,
+		pos="4855.5,941",
+		width=2.6944];
+	48 -> 102	[pos="e,4758.3,949.58 3529.2,1045.4 3798,1024.4 4482.9,971.04 4748.2,950.36"];
+	50	[fillcolor=white,
+		height=1.0833,
+		label=<x<SUB>2</SUB> &le; 2.5<br/>gini = 0.648<br/>samples = 0<br/>value = [0, 2, 1, 7, 6, 0]<br/>class = 3>,
+		pos="3276.5,827",
+		width=2.5694];
+	49 -> 50	[pos="e,3324.8,866.06 3370,901.77 3358,892.31 3345.1,882.09 3332.8,872.37"];
+	63	[fillcolor=white,
+		height=1.0833,
+		label=<x<SUB>0</SUB> &le; 3.5<br/>gini = 0.657<br/>samples = 0<br/>value = [3, 4, 31, 0, 9, 13]<br/>class = 2>,
+		pos="3701.5,827",
+		width=2.8194];
+	49 -> 63	[pos="e,3605.1,866.16 3514.7,901.93 3540.8,891.6 3569.2,880.37 3595.8,869.85"];
+	51	[fillcolor=white,
+		height=1.0833,
+		label=<x<SUB>0</SUB> &le; 1.5<br/>gini = 0.653<br/>samples = 0<br/>value = [0, 2, 1, 3, 6, 0]<br/>class = 4>,
+		pos="2756.5,713",
+		width=2.5694];
+	50 -> 51	[pos="e,2849.2,733.97 3183.8,806.04 3092.6,786.39 2953.6,756.45 2859.1,736.09"];
+	62	[fillcolor=white,
+		height=0.94444,
+		label=<gini = 0.0<br/>samples = 0<br/>value = [0, 0, 0, 4, 0, 0]<br/>class = 3>,
+		pos="3276.5,713",
+		width=2.5694];
+	50 -> 62	[pos="e,3276.5,747.2 3276.5,787.77 3276.5,777.99 3276.5,767.4 3276.5,757.38"];
+	52	[fillcolor=white,
+		height=1.0833,
+		label=<x<SUB>1</SUB> &le; 1.5<br/>gini = 0.444<br/>samples = 0<br/>value = [0, 2, 0, 0, 4, 0]<br/>class = 4>,
+		pos="2477.5,599",
+		width=2.5694];
+	51 -> 52	[pos="e,2570.2,637.23 2664,674.86 2636.9,663.99 2607.2,652.05 2579.5,640.96"];
+	55	[fillcolor=white,
+		height=1.0833,
+		label=<x<SUB>0</SUB> &le; 2.5<br/>gini = 0.611<br/>samples = 0<br/>value = [0, 0, 1, 3, 2, 0]<br/>class = 3>,
+		pos="2756.5,599",
+		width=2.5694];
+	51 -> 55	[pos="e,2756.5,638.06 2756.5,673.77 2756.5,665.57 2756.5,656.8 2756.5,648.28"];
+	53	[fillcolor=white,
+		height=0.94444,
+		label=<gini = 0.0<br/>samples = 0<br/>value = [0, 2, 0, 0, 0, 0]<br/>class = 1>,
+		pos="2224.5,485",
+		width=2.5694];
+	52 -> 53	[pos="e,2299.3,519.1 2391.5,559.93 2364.7,548.07 2335.2,535.02 2308.6,523.22"];
+	54	[fillcolor=white,
+		height=0.94444,
+		label=<gini = 0.0<br/>samples = 0<br/>value = [0, 0, 0, 0, 4, 0]<br/>class = 4>,
+		pos="2427.5,485",
+		width=2.5694];
+	52 -> 54	[pos="e,2442.3,519.2 2460.4,559.77 2455.9,549.68 2451,538.73 2446.4,528.43"];
+	56	[fillcolor=white,
+		height=0.94444,
+		label=<gini = 0.0<br/>samples = 0<br/>value = [0, 0, 0, 2, 0, 0]<br/>class = 3>,
+		pos="2630.5,485",
+		width=2.5694];
+	55 -> 56	[pos="e,2667.8,519.2 2713.5,559.77 2701.2,548.85 2687.8,536.93 2675.4,525.92"];
+	57	[fillcolor=white,
+		height=1.0833,
+		label=<x<SUB>1</SUB> &le; 0.5<br/>gini = 0.625<br/>samples = 0<br/>value = [0, 0, 1, 1, 2, 0]<br/>class = 4>,
+		pos="2833.5,485",
+		width=2.5694];
+	55 -> 57	[pos="e,2807.3,524.06 2782.8,559.77 2788.9,550.94 2795.4,541.45 2801.7,532.32"];
+	58	[fillcolor=white,
+		height=1.0833,
+		label=<x<SUB>2</SUB> &le; 1.5<br/>gini = 0.444<br/>samples = 0<br/>value = [0, 0, 0, 1, 2, 0]<br/>class = 4>,
+		pos="2613.5,371",
+		width=2.5694];
+	57 -> 58	[pos="e,2688.5,410.16 2758.7,445.93 2739.1,435.92 2717.7,425.05 2697.6,414.81"];
+	61	[fillcolor=white,
+		height=0.94444,
+		label=<gini = 0.0<br/>samples = 0<br/>value = [0, 0, 1, 0, 0, 0]<br/>class = 2>,
+		pos="2820.5,371",
+		width=2.5694];
+	57 -> 61	[pos="e,2824.4,405.2 2829.1,445.77 2827.9,435.99 2826.7,425.4 2825.5,415.38"];
+	59	[fillcolor=white,
+		height=0.94444,
+		label=<gini = 0.0<br/>samples = 0<br/>value = [0, 0, 0, 1, 0, 0]<br/>class = 3>,
+		pos="2410.5,257",
+		width=2.5694];
+	58 -> 59	[pos="e,2470.5,291.1 2544.5,331.93 2523.5,320.33 2500.4,307.58 2479.4,295.99"];
+	60	[fillcolor=white,
+		height=0.94444,
+		label=<gini = 0.0<br/>samples = 0<br/>value = [0, 0, 0, 0, 2, 0]<br/>class = 4>,
+		pos="2613.5,257",
+		width=2.5694];
+	58 -> 60	[pos="e,2613.5,291.2 2613.5,331.77 2613.5,321.99 2613.5,311.4 2613.5,301.38"];
+	64	[fillcolor=white,
+		height=1.0833,
+		label=<x<SUB>3</SUB> &le; 2.5<br/>gini = 0.615<br/>samples = 0<br/>value = [3, 4, 30, 0, 6, 9]<br/>class = 2>,
+		pos="3701.5,713",
+		width=2.6944];
+	63 -> 64	[pos="e,3701.5,752.06 3701.5,787.77 3701.5,779.57 3701.5,770.8 3701.5,762.28"];
+	97	[fillcolor=white,
+		height=1.0833,
+		label=<x<SUB>2</SUB> &le; 2.0<br/>gini = 0.594<br/>samples = 0<br/>value = [0, 0, 1, 0, 3, 4]<br/>class = 5>,
+		pos="4249.5,713",
+		width=2.5694];
+	63 -> 97	[pos="e,4156.9,732.92 3803.3,805.2 3901.3,785.17 4048.7,755.03 4147,734.95"];
+	65	[fillcolor=white,
+		height=1.0833,
+		label=<x<SUB>0</SUB> &le; 2.5<br/>gini = 0.556<br/>samples = 0<br/>value = [3, 1, 26, 0, 6, 5]<br/>class = 2>,
+		pos="3539.5,599",
+		width=2.6944];
+	64 -> 65	[pos="e,3594.5,638.06 3646.2,673.77 3632.3,664.13 3617.2,653.7 3602.9,643.81"];
+	88	[fillcolor=white,
+		height=1.0833,
+		label=<x<SUB>0</SUB> &le; 0.5<br/>gini = 0.661<br/>samples = 0<br/>value = [0, 3, 4, 0, 0, 4]<br/>class = 2>,
+		pos="3843.5,599",
+		width=2.5694];
+	64 -> 88	[pos="e,3795.2,638.06 3750,673.77 3762,664.31 3774.9,654.09 3787.2,644.37"];
+	66	[fillcolor=white,
+		height=1.0833,
+		label=<x<SUB>1</SUB> &le; 1.5<br/>gini = 0.485<br/>samples = 0<br/>value = [1, 1, 25, 0, 4, 5]<br/>class = 2>,
+		pos="3234.5,485",
+		width=2.6944];
+	65 -> 66	[pos="e,3331.7,521.69 3442.2,562.25 3410,550.46 3374.1,537.27 3341.3,525.23"];
+	83	[fillcolor=white,
+		height=1.0833,
+		label=<x<SUB>2</SUB> &le; 2.0<br/>gini = 0.64<br/>samples = 0<br/>value = [2, 0, 1, 0, 2, 0]<br/>class = 0>,
+		pos="3539.5,485",
+		width=2.5694];
+	65 -> 83	[pos="e,3539.5,524.06 3539.5,559.77 3539.5,551.57 3539.5,542.8 3539.5,534.28"];
+	67	[fillcolor=white,
+		height=1.0833,
+		label=<x<SUB>2</SUB> &le; 2.5<br/>gini = 0.244<br/>samples = 0<br/>value = [1, 0, 19, 0, 0, 2]<br/>class = 2>,
+		pos="3027.5,371",
+		width=2.6944];
+	66 -> 67	[pos="e,3098,410.16 3164.1,445.93 3145.7,435.96 3125.7,425.15 3106.9,414.95"];
+	74	[fillcolor=white,
+		height=1.0833,
+		label=<x<SUB>2</SUB> &le; 2.5<br/>gini = 0.684<br/>samples = 0<br/>value = [0, 1, 6, 0, 4, 3]<br/>class = 2>,
+		pos="3234.5,371",
+		width=2.5694];
+	66 -> 74	[pos="e,3234.5,410.06 3234.5,445.77 3234.5,437.57 3234.5,428.8 3234.5,420.28"];
+	68	[fillcolor=white,
+		height=0.94444,
+		label=<gini = 0.0<br/>samples = 0<br/>value = [0, 0, 16, 0, 0, 0]<br/>class = 2>,
+		pos="2820.5,257",
+		width=2.6944];
+	67 -> 68	[pos="e,2881.7,291.1 2957.1,331.93 2935.7,320.33 2912.1,307.58 2890.7,295.99"];
+	69	[fillcolor=white,
+		height=1.0833,
+		label=<x<SUB>3</SUB> &le; 1.5<br/>gini = 0.611<br/>samples = 0<br/>value = [1, 0, 3, 0, 0, 2]<br/>class = 2>,
+		pos="3027.5,257",
+		width=2.5694];
+	67 -> 69	[pos="e,3027.5,296.06 3027.5,331.77 3027.5,323.57 3027.5,314.8 3027.5,306.28"];
+	70	[fillcolor=white,
+		height=0.94444,
+		label=<gini = 0.0<br/>samples = 0<br/>value = [0, 0, 3, 0, 0, 0]<br/>class = 2>,
+		pos="2724.5,143",
+		width=2.5694];
+	69 -> 70	[pos="e,2812.1,177.05 2934.8,221.05 2932,220.02 2929.2,219 2926.5,218 2881.8,201.61 2870.2,198.39 2825.5,182 2824.3,181.55 2823,181.09 \
+2821.8,180.63"];
+	71	[fillcolor=white,
+		height=1.0833,
+		label=<x<SUB>1</SUB> &le; 0.5<br/>gini = 0.444<br/>samples = 0<br/>value = [1, 0, 0, 0, 0, 2]<br/>class = 5>,
+		pos="2927.5,143",
+		width=2.5694];
+	69 -> 71	[pos="e,2961.5,182.06 2993.4,217.77 2985.3,208.76 2976.7,199.06 2968.4,189.76"];
+	72	[fillcolor=white,
+		height=0.94444,
+		label=<gini = 0.0<br/>samples = 0<br/>value = [0, 0, 0, 0, 0, 2]<br/>class = 5>,
+		pos="2826.5,34",
+		width=2.5694];
+	71 -> 72	[pos="e,2857.9,68.285 2891.6,103.97 2882.9,94.779 2873.6,84.917 2864.8,75.608"];
+	73	[fillcolor=white,
+		height=0.94444,
+		label=<gini = 0.0<br/>samples = 0<br/>value = [1, 0, 0, 0, 0, 0]<br/>class = 0>,
+		pos="3029.5,34",
+		width=2.5694];
+	71 -> 73	[pos="e,2997.8,68.285 2963.7,103.97 2972.5,94.779 2981.9,84.917 2990.8,75.608"];
+	75	[fillcolor=white,
+		height=1.0833,
+		label=<x<SUB>0</SUB> &le; 0.5<br/>gini = 0.49<br/>samples = 0<br/>value = [0, 0, 0, 0, 4, 3]<br/>class = 4>,
+		pos="3234.5,257",
+		width=2.5694];
+	74 -> 75	[pos="e,3234.5,296.06 3234.5,331.77 3234.5,323.57 3234.5,314.8 3234.5,306.28"];
+	78	[fillcolor=white,
+		height=1.0833,
+		label=<x<SUB>3</SUB> &le; 1.5<br/>gini = 0.245<br/>samples = 0<br/>value = [0, 1, 6, 0, 0, 0]<br/>class = 2>,
+		pos="3437.5,257",
+		width=2.5694];
+	74 -> 78	[pos="e,3368.3,296.16 3303.5,331.93 3321.5,322.01 3341,311.25 3359.4,301.09"];
+	76	[fillcolor=white,
+		height=0.94444,
+		label=<gini = 0.0<br/>samples = 0<br/>value = [0, 0, 0, 0, 4, 0]<br/>class = 4>,
+		pos="3130.5,143",
+		width=2.5694];
+	75 -> 76	[pos="e,3161.3,177.2 3199,217.77 3189.1,207.06 3178.2,195.38 3168.1,184.54"];
+	77	[fillcolor=white,
+		height=0.94444,
+		label=<gini = 0.0<br/>samples = 0<br/>value = [0, 0, 0, 0, 0, 3]<br/>class = 5>,
+		pos="3333.5,143",
+		width=2.5694];
+	75 -> 77	[pos="e,3304.2,177.2 3268.3,217.77 3277.7,207.16 3287.9,195.61 3297.4,184.86"];
+	79	[fillcolor=white,
+		height=1.0833,
+		label=<x<SUB>0</SUB> &le; 1.0<br/>gini = 0.444<br/>samples = 0<br/>value = [0, 1, 2, 0, 0, 0]<br/>class = 2>,
+		pos="3536.5,143",
+		width=2.5694];
+	78 -> 79	[pos="e,3502.9,182.06 3471.3,217.77 3479.3,208.76 3487.8,199.06 3496.1,189.76"];
+	82	[fillcolor=white,
+		height=0.94444,
+		label=<gini = 0.0<br/>samples = 0<br/>value = [0, 0, 4, 0, 0, 0]<br/>class = 2>,
+		pos="3739.5,143",
+		width=2.5694];
+	78 -> 82	[pos="e,3650.8,177.1 3530.2,221.07 3533,220.03 3535.8,219.01 3538.5,218 3582.4,201.76 3593.6,198.17 3637.5,182 3638.7,181.55 3640,181.1 \
+3641.2,180.64"];
+	80	[fillcolor=white,
+		height=0.94444,
+		label=<gini = 0.0<br/>samples = 0<br/>value = [0, 1, 0, 0, 0, 0]<br/>class = 1>,
+		pos="3434.5,34",
+		width=2.5694];
+	79 -> 80	[pos="e,3466.2,68.285 3500.3,103.97 3491.5,94.779 3482.1,84.917 3473.2,75.608"];
+	81	[fillcolor=white,
+		height=0.94444,
+		label=<gini = 0.0<br/>samples = 0<br/>value = [0, 0, 2, 0, 0, 0]<br/>class = 2>,
+		pos="3637.5,34",
+		width=2.5694];
+	79 -> 81	[pos="e,3606.1,68.285 3572.4,103.97 3581.1,94.779 3590.4,84.917 3599.2,75.608"];
+	84	[fillcolor=white,
+		height=0.94444,
+		label=<gini = 0.0<br/>samples = 0<br/>value = [2, 0, 0, 0, 0, 0]<br/>class = 0>,
+		pos="3437.5,371",
+		width=2.5694];
+	83 -> 84	[pos="e,3467.7,405.2 3504.7,445.77 3495,435.16 3484.5,423.61 3474.7,412.86"];
+	85	[fillcolor=white,
+		height=1.0833,
+		label=<x<SUB>1</SUB> &le; 1.0<br/>gini = 0.444<br/>samples = 0<br/>value = [0, 0, 1, 0, 2, 0]<br/>class = 4>,
+		pos="3640.5,371",
+		width=2.5694];
+	83 -> 85	[pos="e,3606.2,410.06 3574,445.77 3582.1,436.76 3590.8,427.06 3599.2,417.76"];
+	86	[fillcolor=white,
+		height=0.94444,
+		label=<gini = 0.0<br/>samples = 0<br/>value = [0, 0, 0, 0, 2, 0]<br/>class = 4>,
+		pos="3640.5,257",
+		width=2.5694];
+	85 -> 86	[pos="e,3640.5,291.2 3640.5,331.77 3640.5,321.99 3640.5,311.4 3640.5,301.38"];
+	87	[fillcolor=white,
+		height=0.94444,
+		label=<gini = 0.0<br/>samples = 0<br/>value = [0, 0, 1, 0, 0, 0]<br/>class = 2>,
+		pos="3843.5,257",
+		width=2.5694];
+	85 -> 87	[pos="e,3783.5,291.1 3709.5,331.93 3730.5,320.33 3753.6,307.58 3774.6,295.99"];
+	89	[fillcolor=white,
+		height=1.0833,
+		label=<x<SUB>2</SUB> &le; 1.5<br/>gini = 0.375<br/>samples = 0<br/>value = [0, 3, 0, 0, 0, 1]<br/>class = 1>,
+		pos="3843.5,485",
+		width=2.5694];
+	88 -> 89	[pos="e,3843.5,524.06 3843.5,559.77 3843.5,551.57 3843.5,542.8 3843.5,534.28"];
+	92	[fillcolor=white,
+		height=1.0833,
+		label=<x<SUB>0</SUB> &le; 1.5<br/>gini = 0.49<br/>samples = 0<br/>value = [0, 0, 4, 0, 0, 3]<br/>class = 2>,
+		pos="4046.5,485",
+		width=2.5694];
+	88 -> 92	[pos="e,3977.3,524.16 3912.5,559.93 3930.5,550.01 3950,539.25 3968.4,529.09"];
+	90	[fillcolor=white,
+		height=0.94444,
+		label=<gini = 0.0<br/>samples = 0<br/>value = [0, 0, 0, 0, 0, 1]<br/>class = 5>,
+		pos="3843.5,371",
+		width=2.5694];
+	89 -> 90	[pos="e,3843.5,405.2 3843.5,445.77 3843.5,435.99 3843.5,425.4 3843.5,415.38"];
+	91	[fillcolor=white,
+		height=0.94444,
+		label=<gini = 0.0<br/>samples = 0<br/>value = [0, 3, 0, 0, 0, 0]<br/>class = 1>,
+		pos="4046.5,371",
+		width=2.5694];
+	89 -> 91	[pos="e,3986.5,405.1 3912.5,445.93 3933.5,434.33 3956.6,421.58 3977.6,409.99"];
+	93	[fillcolor=white,
+		height=0.94444,
+		label=<gini = 0.0<br/>samples = 0<br/>value = [0, 0, 2, 0, 0, 0]<br/>class = 2>,
+		pos="4249.5,371",
+		width=2.5694];
+	92 -> 93	[pos="e,4189.5,405.1 4115.5,445.93 4136.5,434.33 4159.6,421.58 4180.6,409.99"];
+	94	[fillcolor=white,
+		height=1.0833,
+		label=<x<SUB>0</SUB> &le; 2.5<br/>gini = 0.48<br/>samples = 0<br/>value = [0, 0, 2, 0, 0, 3]<br/>class = 5>,
+		pos="4452.5,371",
+		width=2.5694];
+	92 -> 94	[pos="e,4359.9,407.31 4139,448.43 4141.9,447.58 4144.7,446.77 4147.5,446 4232.8,422.59 4260.2,433.29 4350.1,409.92"];
+	95	[fillcolor=white,
+		height=0.94444,
+		label=<gini = 0.0<br/>samples = 0<br/>value = [0, 0, 0, 0, 0, 3]<br/>class = 5>,
+		pos="4350.5,257",
+		width=2.5694];
+	94 -> 95	[pos="e,4380.7,291.2 4417.7,331.77 4408,321.16 4397.5,309.61 4387.7,298.86"];
+	96	[fillcolor=white,
+		height=0.94444,
+		label=<gini = 0.0<br/>samples = 0<br/>value = [0, 0, 2, 0, 0, 0]<br/>class = 2>,
+		pos="4553.5,257",
+		width=2.5694];
+	94 -> 96	[pos="e,4523.6,291.2 4487,331.77 4496.5,321.16 4507,309.61 4516.7,298.86"];
+	98	[fillcolor=white,
+		height=1.0833,
+		label=<x<SUB>3</SUB> &le; 2.5<br/>gini = 0.32<br/>samples = 0<br/>value = [0, 0, 1, 0, 0, 4]<br/>class = 5>,
+		pos="4249.5,599",
+		width=2.5694];
+	97 -> 98	[pos="e,4249.5,638.06 4249.5,673.77 4249.5,665.57 4249.5,656.8 4249.5,648.28"];
+	101	[fillcolor=white,
+		height=0.94444,
+		label=<gini = 0.0<br/>samples = 0<br/>value = [0, 0, 0, 0, 3, 0]<br/>class = 4>,
+		pos="4452.5,599",
+		width=2.5694];
+	97 -> 101	[pos="e,4392.5,633.1 4318.5,673.93 4339.5,662.33 4362.6,649.58 4383.6,637.99"];
+	99	[fillcolor=white,
+		height=0.94444,
+		label=<gini = 0.0<br/>samples = 0<br/>value = [0, 0, 0, 0, 0, 4]<br/>class = 5>,
+		pos="4249.5,485",
+		width=2.5694];
+	98 -> 99	[pos="e,4249.5,519.2 4249.5,559.77 4249.5,549.99 4249.5,539.4 4249.5,529.38"];
+	100	[fillcolor=white,
+		height=0.94444,
+		label=<gini = 0.0<br/>samples = 0<br/>value = [0, 0, 1, 0, 0, 0]<br/>class = 2>,
+		pos="4452.5,485",
+		width=2.5694];
+	98 -> 100	[pos="e,4392.5,519.1 4318.5,559.93 4339.5,548.33 4362.6,535.58 4383.6,523.99"];
+	103	[fillcolor=white,
+		height=1.0833,
+		label=<x<SUB>0</SUB> &le; 1.5<br/>gini = 0.235<br/>samples = 0<br/>value = [2, 1, 27, 0, 0, 1]<br/>class = 2>,
+		pos="4855.5,827",
+		width=2.6944];
+	102 -> 103	[pos="e,4855.5,866.06 4855.5,901.77 4855.5,893.57 4855.5,884.8 4855.5,876.28"];
+	114	[fillcolor=green,
+		height=1.0833,
+		label=<x<SUB>1</SUB> &le; 3.5<br/>gini = 0.612<br/>samples = 1<br/>value = [0, 4, 1, 1, 0, 1]<br/>class = 1>,
+		pos="5365.5,827",
+		width=2.5694];
+	102 -> 114	[pos="e,5272.6,848.4 4952.6,918.67 5041.4,899.19 5172.1,870.47 5262.6,850.6"];
+	104	[fillcolor=white,
+		height=0.94444,
+		label=<gini = 0.0<br/>samples = 0<br/>value = [0, 0, 21, 0, 0, 0]<br/>class = 2>,
+		pos="4752.5,713",
+		width=2.6944];
+	103 -> 104	[pos="e,4783,747.2 4820.3,787.77 4810.6,777.16 4800,765.61 4790.1,754.86"];
+	105	[fillcolor=white,
+		height=1.0833,
+		label=<x<SUB>0</SUB> &le; 2.5<br/>gini = 0.58<br/>samples = 0<br/>value = [2, 1, 6, 0, 0, 1]<br/>class = 2>,
+		pos="4959.5,713",
+		width=2.5694];
+	103 -> 105	[pos="e,4924.2,752.06 4891,787.77 4899.5,778.67 4908.5,768.87 4917.3,759.48"];
+	106	[fillcolor=white,
+		height=1.0833,
+		label=<x<SUB>3</SUB> &le; 0.5<br/>gini = 0.444<br/>samples = 0<br/>value = [2, 1, 0, 0, 0, 0]<br/>class = 0>,
+		pos="4858.5,599",
+		width=2.5694];
+	105 -> 106	[pos="e,4892.8,638.06 4925,673.77 4916.9,664.76 4908.2,655.06 4899.8,645.76"];
+	109	[fillcolor=white,
+		height=1.0833,
+		label=<x<SUB>2</SUB> &le; 2.5<br/>gini = 0.245<br/>samples = 0<br/>value = [0, 0, 6, 0, 0, 1]<br/>class = 2>,
+		pos="5061.5,599",
+		width=2.5694];
+	105 -> 109	[pos="e,5026.8,638.06 4994.3,673.77 5002.6,664.67 5011.5,654.87 5020.1,645.48"];
+	107	[fillcolor=white,
+		height=0.94444,
+		label=<gini = 0.0<br/>samples = 0<br/>value = [0, 1, 0, 0, 0, 0]<br/>class = 1>,
+		pos="4655.5,485",
+		width=2.5694];
+	106 -> 107	[pos="e,4715.5,519.1 4789.5,559.93 4768.5,548.33 4745.4,535.58 4724.4,523.99"];
+	108	[fillcolor=white,
+		height=0.94444,
+		label=<gini = 0.0<br/>samples = 0<br/>value = [2, 0, 0, 0, 0, 0]<br/>class = 0>,
+		pos="4858.5,485",
+		width=2.5694];
+	106 -> 108	[pos="e,4858.5,519.2 4858.5,559.77 4858.5,549.99 4858.5,539.4 4858.5,529.38"];
+	110	[fillcolor=white,
+		height=0.94444,
+		label=<gini = 0.0<br/>samples = 0<br/>value = [0, 0, 4, 0, 0, 0]<br/>class = 2>,
+		pos="5061.5,485",
+		width=2.5694];
+	109 -> 110	[pos="e,5061.5,519.2 5061.5,559.77 5061.5,549.99 5061.5,539.4 5061.5,529.38"];
+	111	[fillcolor=white,
+		height=1.0833,
+		label=<x<SUB>1</SUB> &le; 3.5<br/>gini = 0.444<br/>samples = 0<br/>value = [0, 0, 2, 0, 0, 1]<br/>class = 2>,
+		pos="5264.5,485",
+		width=2.5694];
+	109 -> 111	[pos="e,5195.3,524.16 5130.5,559.93 5148.5,550.01 5168,539.25 5186.4,529.09"];
+	112	[fillcolor=white,
+		height=0.94444,
+		label=<gini = 0.0<br/>samples = 0<br/>value = [0, 0, 2, 0, 0, 0]<br/>class = 2>,
+		pos="5162.5,371",
+		width=2.5694];
+	111 -> 112	[pos="e,5192.7,405.2 5229.7,445.77 5220,435.16 5209.5,423.61 5199.7,412.86"];
+	113	[fillcolor=white,
+		height=0.94444,
+		label=<gini = 0.0<br/>samples = 0<br/>value = [0, 0, 0, 0, 0, 1]<br/>class = 5>,
+		pos="5365.5,371",
+		width=2.5694];
+	111 -> 113	[pos="e,5335.6,405.2 5299,445.77 5308.5,435.16 5319,423.61 5328.7,412.86"];
+	115	[fillcolor=white,
+		height=1.0833,
+		label=<x<SUB>0</SUB> &le; 2.0<br/>gini = 0.5<br/>samples = 0<br/>value = [0, 0, 1, 1, 0, 0]<br/>class = 2>,
+		pos="5365.5,713",
+		width=2.5694];
+	114 -> 115	[pos="e,5365.5,752.06 5365.5,787.77 5365.5,779.57 5365.5,770.8 5365.5,762.28"];
+	118	[fillcolor=green,
+		height=1.0833,
+		label=<x<SUB>0</SUB> &le; 2.0<br/>gini = 0.32<br/>samples = 1<br/>value = [0, 4, 0, 0, 0, 1]<br/>class = 1>,
+		pos="5670.5,713",
+		width=2.5694];
+	114 -> 118	[pos="e,5577.9,747.99 5458.3,791.94 5493.1,779.15 5532.9,764.55 5568.5,751.46"];
+	116	[fillcolor=white,
+		height=0.94444,
+		label=<gini = 0.0<br/>samples = 0<br/>value = [0, 0, 0, 1, 0, 0]<br/>class = 3>,
+		pos="5264.5,599",
+		width=2.5694];
+	115 -> 116	[pos="e,5294.4,633.2 5331,673.77 5321.5,663.16 5311,651.61 5301.3,640.86"];
+	117	[fillcolor=white,
+		height=0.94444,
+		label=<gini = 0.0<br/>samples = 0<br/>value = [0, 0, 1, 0, 0, 0]<br/>class = 2>,
+		pos="5467.5,599",
+		width=2.5694];
+	115 -> 117	[pos="e,5437.3,633.2 5400.3,673.77 5410,663.16 5420.5,651.61 5430.3,640.86"];
+	119	[fillcolor=green,
+		height=0.94444,
+		label=<gini = 0.0<br/>samples = 1<br/>value = [0, 0, 0, 0, 0, 1]<br/>class = 5>,
+		pos="5670.5,599",
+		width=2.5694];
+	118 -> 119	[pos="e,5670.5,633.2 5670.5,673.77 5670.5,663.99 5670.5,653.4 5670.5,643.38"];
+	120	[fillcolor=white,
+		height=0.94444,
+		label=<gini = 0.0<br/>samples = 0<br/>value = [0, 4, 0, 0, 0, 0]<br/>class = 1>,
+		pos="5873.5,599",
+		width=2.5694];
+	118 -> 120	[pos="e,5813.5,633.1 5739.5,673.93 5760.5,662.33 5783.6,649.58 5804.6,637.99"];
+	"\n"	[height=0.5,
+		pos="3199.5,1169",
+		width=0.75];
+}

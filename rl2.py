@@ -141,13 +141,13 @@ def test_policy(env, policy, state_transformer, n_test_rollouts):
     return cum_rew / n_test_rollouts
 
 # Get explaination
-def get_depth(env, policy, state_transformer, viz):
-    feature_names= list(str(range(0,512)))
-    classes = str([0,1,2,3,4,5])
+def get_depth(policy, obs):
+    #feature_names= list(str(range(0,512)))
+    #classes = str([0,1,2,3,4,5])
 
     #dot_data = viz
     #graph = pydotplus.graph_from_dot_data(dot_data.getvalue())
-    graph = pydotplus.graph_from_dot_file("tmp/pong/dt_policy1.dot")
+    graph = pydotplus.graph_from_dot_file("tmp/taxi/dt_taxi.dot")
 
     for node in graph.get_node_list():
         if node.get_attributes().get('label') is None:
@@ -160,7 +160,7 @@ def get_depth(env, policy, state_transformer, viz):
             node.set('label', '<br/>'.join(labels))
             node.set_fillcolor('white')
 
-    decision_paths = get_path(env,policy, state_transformer)
+    decision_paths = get_explanation(policy, obs)
 
 
     for decision_path in decision_paths:
@@ -184,17 +184,17 @@ def get_path(env, policy, state_transformer):
     student_path = get_explanation(env, wrapped_student, False)
     return student_path
 
-def get_explanation(env, policy, render):
-    obs, done = np.array(env.reset()), False
-    rollout = []
+def get_explanation(policy, obs):
+    #obs, done = np.array(env.reset()), False
+    #rollout = []
 
-    if render:
-        env.unwrapped.render()
+    #if render:
+    #    env.unwrapped.render()
 
         # Action
-    act = policy.predict(np.array([obs]))[0]
+    #act = policy.predict(obs)
 
-    decision_path = policy.decision_path(np.array([obs]))
+    decision_path = policy.decision_path(obs)
     
     return decision_path
 
@@ -252,6 +252,34 @@ def get_action_sequences(env, policy, seq_len, n_rollouts):
     seqs_sorted = sorted(list(counter.items()), key=lambda pair: -pair[1])
 
     return seqs_sorted
+
+def test_similar(student1, student2, env, teacher, n_test=100):
+    rollouts = get_rollouts(env, teacher, False, n_test)
+    obss = [obs for obs, _, _, _ in rollouts]
+    acts = [act for _, act, _, _ in rollouts]
+    acts1 = []
+    acts2 = []
+    a = []
+    for obs in obss:
+        acts1.append(student1.predict(obs))
+        acts2.append(student2.predict(obs))
+    
+    for act in acts:
+        a.append(act)
+    a1 = []
+    a2 = []
+    for a in acts1:
+        a1.append(a[0])
+    for a in acts2:
+        a2.append(a[0])
+    correct1 = 0
+    correct2 = 0
+    for i in range(len(a1)):
+        if (a1[i] == acts[i]):
+            correct1 += 1
+        if (a2[i] == acts[i]):
+            correct2 += 1
+    return correct1/n_test, correct2/n_test
 
 def train_dagger(env, teacher, student, state_transformer, max_iters, n_batch_rollouts, max_samples, train_frac, is_reweight, n_test_rollouts):
     # Step 0: Setup
