@@ -21,7 +21,7 @@ from log import *
 import tensorflow as tf
 import utils
 
-def learn_dt(agent):
+def learn_dt(agent, id):
     # Parameters
     log_fname = '../taxi_dt.log'
     max_depth = 10
@@ -49,7 +49,7 @@ def learn_dt(agent):
 
     # Train student
     if is_train:
-        student = train_dagger(env, teacher, student, state_transformer, max_iters, n_batch_rollouts, max_samples, train_frac, is_reweight, n_test_rollouts)
+        student = train_dagger(env, teacher, student, state_transformer, max_iters, n_batch_rollouts, max_samples, train_frac, is_reweight, n_test_rollouts, id)
         save_dt_policy(student, save_dirname, save_fname)
         save_dt_policy_viz(student, save_dirname, save_viz_fname)
     else:
@@ -109,8 +109,19 @@ if __name__ == '__main__':
     #sim1, sim2 = test_similar(student1, student2, env, agent)
     #print(sim1*100)
     #print(sim2*100)
-    student = learn_dt(agent)
-    get_depth(student, [[0,10,10,10]])
+    f = open("mock.csv", "a")
+    f.write("Set,Tree1vsNN,Tree2vsNN,Tree1vsTree2\n")
+    f.close()
+    for i in range(5):
+        trace = initial_data(env, agent, 100)
+        student1 = learn_dt(agent, trace)
+        student2 = learn_dt(agent, trace)
+        for j in range(5):
+            sim1, sim2, sim3 = test_similar(student1, student2, env, agent)
+            f = open("mock.csv", "a")
+            content = "{},{},{},{}\n".format(i,sim1,sim2,sim3)
+            f.write(content)
+            f.close()
 
     #viz = load_grahviz("tmp/pong", "dt_policy1.dot")
     #print(viz)

@@ -279,16 +279,25 @@ def test_similar(student1, student2, env, teacher, n_test=100):
             correct1 += 1
         if (a2[i] == acts[i]):
             correct2 += 1
-    return correct1/n_test, correct2/n_test
+    correct3 = 0
+    for i in range(len(a1)):
+        if (a1[i] == a2[i]):
+            correct3 += 1
+    return correct1/n_test, correct2/n_test, correct3/n_test
 
-def train_dagger(env, teacher, student, state_transformer, max_iters, n_batch_rollouts, max_samples, train_frac, is_reweight, n_test_rollouts):
+def initial_data(env, teacher, n_batch_rollouts):
+    trace = get_rollouts(env, teacher, False, n_batch_rollouts)
+    return trace
+
+def train_dagger(env, teacher, student, state_transformer, max_iters, n_batch_rollouts, max_samples, train_frac, is_reweight, n_test_rollouts, id):
     # Step 0: Setup
     obss, acts, qs = [], [], []
     students = []
-    wrapped_student = TransformerPolicy(student, state_transformer)
+    #wrapped_student = TransformerPolicy(student, state_transformer)
     
     # Step 1: Generate some supervised traces into the buffer
-    trace = get_rollouts(env, teacher, False, n_batch_rollouts)
+    #trace = get_rollouts(env, teacher, False, n_batch_rollouts)
+    trace = id
     obss.extend((state_transformer(obs) for obs, _, _, _ in trace))
     acts.extend((act for _, act, _, _ in trace))
     qs.extend(teacher.predict_q(raw for _, _, _, raw  in trace))
